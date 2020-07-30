@@ -1,0 +1,17 @@
+@import "variable";
+
+.container {
+  .navbar-nav {
+    .nav-item {
+      font: normal bold 14px/19px Open Sans;
+      @include text-shadow(0.3px);
+      &:hover {
+        background-color: $button_color;
+        border-radius: 15px;
+        color: white !important;
+      }
+    }
+  }
+}
+
+@import "responsive";

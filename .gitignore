@@ -1,2 +1,5 @@
 **/dist
 **/css
+scss/*.css
+scss/*.css*
+.vscode

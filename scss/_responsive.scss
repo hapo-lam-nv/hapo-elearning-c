@@ -1,0 +1,25 @@
+@media only screen and (max-width: 768px) {
+  .no-gutter-cus {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .no-gutter-cus-one {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    .navbar-nav {
+      .nav-item {
+        color: #505353 !important;
+        &:hover {
+          background-color: white;
+          color: $button_color !important;
+        }
+      }
+    }
+  }
+}
