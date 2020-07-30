@@ -3,14 +3,14 @@ $url_Sans: "../font/font.css";
 $UTM: "UTM";
 $url_UTM: "../font/UTM_BryantLG.ttf";
 $button_color: #b2d235;
-@mixin font_Face($font_family, $font_url) {
+@mixin fontFace($font_family, $font_url) {
   @font-face {
     font-family: #{$font_family};
     src: url("#{$font_url}");
   }
 }
 
-@mixin cover_Image($color) {
+@mixin coverImage($color) {
   width: auto;
   height: auto;
   object-fit: contain;
@@ -18,13 +18,13 @@ $button_color: #b2d235;
   background-color: $color;
 }
 
-@include font_Face($UTM, $url_UTM);
+@include fontFace($UTM, $url_UTM);
 @font-face {
   font-family: main-font;
   src: url("../font/UTM_BryantLG.ttf");
 }
 
-@keyframes slide_Show {
+@keyframes slideShow {
   from {
     opacity: 0;
   }
@@ -39,7 +39,7 @@ $button_color: #b2d235;
   color: white;
 }
 
-@mixin text_Shadow($value) {
+@mixin textShadow($value) {
   -webkit-text-stroke-width: $value;
 }
 
