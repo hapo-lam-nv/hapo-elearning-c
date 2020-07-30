@@ -1,0 +1,25 @@
+@import "variable";
+.container {
+  .navbar-nav {
+    .nav-item {
+      font: normal bold 14px/19px Open Sans;
+      @include textShadow(0.3px);
+      color: #505353;
+      &:hover {
+        background-color: $button_color;
+        border-radius: 15px;
+        color: white;
+      }
+    }
+  }
+}
+
+.navbar-nav {
+  a.text-dark.nav_item :hover {
+    background-color: $button_color;
+    border-radius: 15px;
+    color: white;
+  }
+}
+
+@import "responsive";

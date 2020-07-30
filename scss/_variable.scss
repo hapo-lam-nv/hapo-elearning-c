@@ -1,0 +1,59 @@
+$open_Sans: "Open_Sans";
+$url_Sans: "../font/font.css";
+$UTM: "UTM";
+$url_UTM: "../font/UTM_BryantLG.ttf";
+$button_color: #b2d235;
+@mixin fontFace($font_family, $font_url) {
+  @font-face {
+    font-family: #{$font_family};
+    src: url("#{$font_url}");
+  }
+}
+
+@mixin coverImage($color) {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  padding: 12% 20%;
+  background-color: $color;
+}
+
+@include fontFace($UTM, $url_UTM);
+@font-face {
+  font-family: main-font;
+  src: url("../font/UTM_BryantLG.ttf");
+}
+
+@keyframes slideShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fix-hover {
+  text-decoration: none;
+  background-color: $button_color;
+  color: white;
+}
+
+@mixin textShadow($value) {
+  -webkit-text-stroke-width: $value;
+}
+
+.main-font {
+  font-family: main-font;
+  font-style: normal;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.text-fix {
+  -webkit-text-stroke-width: 2px;
+}
