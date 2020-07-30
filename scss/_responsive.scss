@@ -5,10 +5,10 @@
   .container {
     .navbar-nav {
       .nav-item {
-        color: #505353 !important;
+        color: #505353;
         &:hover {
           background-color: white;
-          color: $button_color !important;
+          color: $button_color;
         }
       }
     }
