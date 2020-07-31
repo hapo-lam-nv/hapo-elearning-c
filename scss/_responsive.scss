@@ -64,11 +64,20 @@
   }
 
   .test {
-    width: 30px;
-    height: 30px;
-    border: 1px solid red;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
   }
-  // input:checked ~ .close {
-  //   display: block;
-  // }
+
+  .close {
+    display: none;
+  }
+  input:checked ~ .close {
+    display: block;
+  }
+
+  input:checked ~ .navbar-toggler-icon {
+    visibility: hidden;
+  }
 }

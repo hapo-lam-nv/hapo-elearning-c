@@ -18,14 +18,16 @@
     <header class="container">
         <nav class="row navbar navbar-expand-sm navbar-light d-flex flex-md-wrap flex-lg-nowrap p-md-0">
             <div class="w-100 col-xl-4 d-flex flex-nowrap no-gutter-cus px-0">
-                <button class="navbar-toggler border-0 col-xs-2 px-1" type="button" data-toggle="collapse"
-                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    <label for="close" class="position-relative "></label>
+                <button
+                    class="navbar-toggler border-0 col-xs-2 px-1 d-flex justify-content-center align-items-center d-sm-none"
+                    type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <input type="checkbox" id="close" hidden>
+                    <span class="navbar-toggler-icon d-sm-none"></span>
+                    <i class="fa fa-times close position-absolute d-sm-none"></i>
+                    <label for="close" class="position-absolute test d-sm-none"></label>
                 </button>
-                <input type="checkbox" id="close">
-                <i class="fa fa-times close"></i>
+
                 <a class="navbar-brand col-xl-12 col-sm-7 mx-md-auto col-xs-8" href="#">
                     <img class="d-block d-sm-none mx-auto" src="image/Hapo_Learn-425.png" alt="Logo">
                     <img class="d-none d-sm-block my-md-3 mx-xl-0 w-100" src="image/logo.png" alt="Logo">
