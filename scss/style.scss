@@ -1,4 +1,5 @@
 @import "variable";
+
 .container {
   .navbar-nav {
     .nav-item {
@@ -20,6 +21,56 @@
     border-radius: 15px;
     color: white;
   }
+}
+
+.hapo-wrap-slide {
+  .hapo-slide-desc {
+    max-width: 1200px;
+
+    .hapo-slide-desc-slogan {
+      font: 50px/61px UTM;
+      letter-spacing: -0.05em;
+      color: #11114e;
+    }
+  }
+}
+
+.hapo-wrap-slide {
+  .background-banner {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.hapo-slide-desc-slogan {
+  b {
+    font-weight: bold;
+    letter-spacing: 0;
+  }
+}
+
+.hapo-slide-desc-slogan-det {
+  font: 20px/25px UTM;
+  letter-spacing: -0.05em;
+  color: #505353;
+}
+
+.btn-banner-cus {
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 35px;
+  color: #ffffff;
+  font: normal bold 30px/70px UTM;
+  background-color: $button_color;
+  @include textShadow(1px);
+  &:hover {
+    transform: scale(1.1);
+    @extend .fix-hover;
+  }
+}
+
+.hapo-wrap-space {
+  height: 160px;
+  background-image: linear-gradient(0, rgb(182, 178, 178), #ffffff);
 }
 
 @import "responsive";
