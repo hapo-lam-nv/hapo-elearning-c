@@ -62,4 +62,13 @@
   .hapo-wrap-space {
     margin-top: 200px;
   }
+
+  .test {
+    width: 30px;
+    height: 30px;
+    border: 1px solid red;
+  }
+  // input:checked ~ .close {
+  //   display: block;
+  // }
 }
