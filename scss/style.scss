@@ -383,8 +383,6 @@
 }
 
 .hapo-wrap-statistic {
-  padding: 110px 0;
-
   .hapo-feedback-heading {
     border-bottom: 5px solid $button_color;
     @extend .heading-main;
@@ -407,7 +405,6 @@
   }
 
   .hapo-statistic-data {
-    margin: 7% auto 15% auto;
     color: #b2d235;
   }
 }
