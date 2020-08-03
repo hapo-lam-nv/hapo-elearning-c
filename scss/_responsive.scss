@@ -1,4 +1,30 @@
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
+  .hapo-wrap-slide {
+    .hapo-slide-desc {
+      .hapo-slide-desc-slogan {
+        font: 30px/37px UTM;
+      }
+
+      .hapo-slide-desc-slogan-det {
+        font: 16px/20px UTM;
+      }
+
+      .btn-banner-cus {
+        font: 16px/20px UTM;
+      }
+    }
+  }
+
+  .hapo-slide-desc-slogan {
+    img {
+      width: 40px;
+      height: 37px;
+    }
+  }
+
+  .hapo-wrap-space {
+    height: 100px;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -12,5 +38,28 @@
         }
       }
     }
+  }
+
+  .hapo-wrap-slide {
+    .wrap-det {
+      top: 100%;
+
+      .hapo-slide-desc {
+        font: 30px/31px UTM;
+        padding: 0 40px;
+      }
+    }
+
+    .hapo-button-courses {
+      text-align: center;
+
+      .btn-banner-cus {
+        font: bold 18px/22px UTM;
+      }
+    }
+  }
+
+  .hapo-wrap-space {
+    margin-top: 200px;
   }
 }
