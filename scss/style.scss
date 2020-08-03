@@ -291,8 +291,8 @@
     .hapo-user-inf {
       margin-left: 10px;
 
-      .hapo-userN,
-      .hapo-coursesN,
+      .hapo-user-name,
+      .hapo-courses-name,
       .hapo-like {
         text-shadow: 0.1px 0.1px;
         display: flex;
@@ -300,11 +300,11 @@
         margin: 3px auto;
       }
 
-      .hapo-userN {
+      .hapo-user-name {
         color: #11114e;
       }
 
-      .hapo-coursesN {
+      .hapo-courses-name {
         color: #505353;
       }
     }
