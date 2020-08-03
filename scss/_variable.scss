@@ -10,11 +10,11 @@ $button_color: #b2d235;
   }
 }
 
-@mixin coverImage($color) {
+@mixin coverImage($x, $y, $color) {
   width: auto;
   height: auto;
   object-fit: contain;
-  padding: 12% 20%;
+  padding: $x $y;
   background-color: $color;
 }
 

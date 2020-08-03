@@ -1,4 +1,8 @@
 @media only screen and (max-width: 768px) {
+  .coverImage {
+    height: 145px;
+  }
+
   .hapo-wrap-slide {
     .hapo-slide-desc {
       .hapo-slide-desc-slogan {
@@ -25,9 +29,53 @@
   .hapo-wrap-space {
     height: 100px;
   }
+
+  .row-one {
+    position: relative;
+    top: -60px;
+
+    .course-one,
+    .course-two,
+    .course-three {
+      padding: 4px;
+
+      .card-img-top {
+        @extend .coverImage;
+      }
+    }
+  }
+
+  .container-fix {
+    margin: auto;
+    padding: 0;
+  }
+
+  .container {
+    .card {
+      .card-title {
+        font: normal bold 20px/25px UTM;
+      }
+
+      .card-text {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .btn-cus {
+        font: bold 10px/12px UTM;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 425px) {
+  .coverImage1 {
+    height: 165px;
+  }
+
   .container {
     .navbar-nav {
       .nav-item {
@@ -61,5 +109,39 @@
 
   .hapo-wrap-space {
     margin-top: 200px;
+  }
+
+  .row-one {
+    padding: 0 15px;
+
+    .course-one,
+    .course-two,
+    .course-three {
+      padding: 0 60px 30px 60px;
+
+      .card-img-top {
+        height: 180px;
+      }
+    }
+  }
+
+  .container {
+    .card {
+      .btn-cus {
+        font: bold 18px/22px UTM;
+      }
+    }
+  }
+
+  .hapo-wrap-courses-row {
+    .other-courses {
+      font: bold 40px/49px UTM;
+    }
+  }
+
+  .hapo-row-four {
+    .hapo-all-course {
+      font: bold 22px/27px UTM;
+    }
   }
 }
