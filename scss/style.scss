@@ -70,4 +70,126 @@
   background-image: linear-gradient(0, rgb(182, 178, 178), #ffffff);
 }
 
+.row-one {
+  position: relative;
+  top: -104px;
+
+  .course-left {
+    img {
+      @include coverImage(12%, 20%, #3f6185);
+    }
+  }
+
+  .course-center {
+    img {
+      @include coverImage(12%, 20%, #dc594c);
+    }
+  }
+
+  .course-right {
+    img {
+      @include coverImage(12%, 20%, #556598);
+    }
+  }
+}
+
+.row-four {
+  .course-left {
+    img {
+      @include coverImage(12%, 20%, #24abe2);
+      height: 209px;
+    }
+  }
+
+  .course-center {
+    img {
+      @include coverImage(12%, 20%, #e14e40);
+      height: 209px;
+    }
+  }
+
+  .course-right {
+    img {
+      @include coverImage(12%, 20%, #1b75bb);
+      height: 209px;
+    }
+  }
+}
+
+.container {
+  .card {
+    background-color: transparent;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px 15px 15px 15px;
+
+    .card-text {
+      font: normal bold 14px/20px UTM;
+    }
+  }
+}
+
+.container {
+  .card {
+    .card-title {
+      font: normal bold 30px/37px UTM;
+      color: #b2d235;
+      @include textShadow(1px);
+    }
+
+    .btn-cus {
+      box-shadow: inset 0px 1.5px 2px #6f8710;
+      border-radius: 22px;
+      letter-spacing: 0.06rem;
+      background-color: $button_color;
+      @include textShadow(1px);
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.heading-main {
+  margin: auto;
+  color: #11114e;
+  font: normal bold 75px/98px UTM;
+}
+
+.hapo-wrap-courses-row {
+  width: 85%;
+  position: relative;
+  top: -104px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+
+  .text-fix {
+    @extend .heading-main;
+  }
+}
+
+.hapo-row-two {
+  .other-courses {
+    border-bottom: 5px solid $button_color;
+  }
+}
+
+.hapo-row-four {
+  color: $button_color;
+  letter-spacing: -0.02em;
+
+  .hapo-all-course {
+    font: bold 40px/49px UTM;
+    color: #90ab26;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .hapo-other-courses:hover {
+    transform: scale(1.05);
+  }
+}
+
 @import "responsive";
