@@ -45,6 +45,12 @@
     }
   }
 
+  .hapo-wrap-courses-row {
+    .other-courses {
+      font: bold 50px/61px UTM;
+    }
+  }
+
   .container-fix {
     margin: auto;
     padding: 0;
@@ -67,6 +73,41 @@
       .btn-cus {
         font: bold 10px/12px UTM;
       }
+    }
+  }
+
+  .hapo-wrap-inf {
+    .hapo-inf-content {
+      padding: 80px 0;
+
+      .hapo-content-heading {
+        top: -35px;
+        display: block;
+        text-align: center;
+        font: normal bold 50px/61px UTM;
+      }
+
+      li {
+        font: 14px/20px UTM;
+      }
+    }
+
+    .hapo-inf-left {
+      transform: scale(0.6, 0.6);
+      top: -250px;
+      left: -84px;
+    }
+  }
+
+  .hapo-wrap-feedback {
+    .hapo-wrap-feedback-heading {
+      .hapo-feedback-heading {
+        font: bold 50px/61px UTM;
+      }
+    }
+
+    .hapo-feedback-det {
+      font: 18px/22px UTM;
     }
   }
 }
@@ -107,6 +148,12 @@
     margin-top: 200px;
   }
 
+  .hapo-wrap-courses-row {
+    .other-courses {
+      font: bold 40px/49px UTM;
+    }
+  }
+
   .row-one {
     padding: 0 15px;
 
@@ -129,15 +176,30 @@
     }
   }
 
-  .hapo-wrap-courses-row {
-    .other-courses {
-      font: bold 40px/49px UTM;
-    }
-  }
-
   .hapo-row-four {
     .hapo-all-course {
       font: bold 22px/27px UTM;
+    }
+  }
+
+  .hapo-wrap-inf {
+    .hapo-inf-content {
+      .hapo-content-heading {
+        top: 15px;
+        font: normal bold 40px/40px UTM;
+      }
+
+      .hapo-content {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .hapo-wrap-feedback {
+    .hapo-wrap-feedback-heading {
+      .hapo-feedback-heading {
+        font: bold 40px/49px UTM;
+      }
     }
   }
 }
