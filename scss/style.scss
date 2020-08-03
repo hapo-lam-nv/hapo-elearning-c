@@ -354,25 +354,4 @@
   }
 }
 
-.hapo-wrap-learn {
-  padding: 10% 0;
-  margin-top: 110px;
-  background: url(../image/background7.png) no-repeat center;
-  background-size: cover;
-
-  .hapo-content-learn {
-    width: 705px;
-    margin: auto;
-
-    .hapo-learn-heading {
-      width: 705px;
-      height: 158px;
-      font: normal bold 60px/74px UTM;
-      text-align: center;
-      letter-spacing: -0.02em;
-      color: #ffffff;
-    }
-  }
-}
-
 @import "responsive";
