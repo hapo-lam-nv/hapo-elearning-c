@@ -74,19 +74,19 @@
   position: relative;
   top: -104px;
 
-  .course-one {
+  .course-left {
     img {
       @include coverImage(12%, 20%, #3f6185);
     }
   }
 
-  .course-two {
+  .course-center {
     img {
       @include coverImage(12%, 20%, #dc594c);
     }
   }
 
-  .course-three {
+  .course-right {
     img {
       @include coverImage(12%, 20%, #556598);
     }
@@ -94,21 +94,21 @@
 }
 
 .row-four {
-  .course-one {
+  .course-left {
     img {
       @include coverImage(12%, 20%, #24abe2);
       height: 209px;
     }
   }
 
-  .course-two {
+  .course-center {
     img {
       @include coverImage(12%, 20%, #e14e40);
       height: 209px;
     }
   }
 
-  .course-three {
+  .course-right {
     img {
       @include coverImage(12%, 20%, #1b75bb);
       height: 209px;

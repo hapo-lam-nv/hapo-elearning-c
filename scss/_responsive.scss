@@ -34,9 +34,9 @@
     position: relative;
     top: -60px;
 
-    .course-one,
-    .course-two,
-    .course-three {
+    .course-left,
+    .course-center,
+    .course-right {
       padding: 4px;
 
       .card-img-top {
@@ -110,9 +110,9 @@
   .row-one {
     padding: 0 15px;
 
-    .course-one,
-    .course-two,
-    .course-three {
+    .course-left,
+    .course-center,
+    .course-right {
       padding: 0 60px 30px 60px;
 
       .card-img-top {
