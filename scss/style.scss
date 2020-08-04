@@ -409,4 +409,54 @@
   }
 }
 
+.container-wrap {
+  background-color: #505353;
+
+  .hapo-logo-footer {
+    .footer-det {
+      color: white;
+      font: 20px/25px UTM;
+    }
+  }
+
+  .hapo-footer-wrap-list {
+    .hapo-footer-list-page {
+      margin: 0 10px;
+    }
+
+    .hapo-list-item {
+      margin: 20px auto;
+      font: bold 20px/25px UTM;
+    }
+  }
+
+  .hapo-list-item {
+    a {
+      color: white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.hapo-wrap-contact {
+  .hapo-face-link {
+    margin: auto 15px;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.wrap-copy {
+  background-color: #454545;
+
+  .container {
+    color: white;
+    padding: 10px 0;
+    font: 15px/18px UTM;
+  }
+}
+
 @import "responsive";

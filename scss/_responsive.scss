@@ -142,6 +142,40 @@
       font: bold 40px/49px UTM;
     }
   }
+
+  .container-wrap {
+    .hapo-logo-footer {
+      .hapo-logo-image {
+        width: 170px;
+      }
+
+      .footer-det {
+        font: 16px/20px UTM;
+      }
+    }
+
+    .hapo-footer-wrap-list {
+      padding: 0 0 0 35px;
+
+      .hapo-footer-list-page {
+        padding: 0;
+        margin: 0;
+
+        .hapo-list-item {
+          font: bold 18px/22px UTM;
+        }
+      }
+    }
+  }
+
+  .hapo-wrap-contact {
+    .hapo-face-link {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -254,6 +288,39 @@
   .hapo-wrap-statistic {
     .hapo-feedback-heading {
       font: bold 40px/49px UTM;
+    }
+  }
+
+  .container-wrap {
+    .hapo-logo-footer {
+      .hapo-logo-image {
+        width: 150px;
+      }
+
+      .footer-det {
+        font: 14px/17px UTM;
+      }
+    }
+
+    .hapo-footer-wrap-list {
+      .hapo-footer-list-page {
+        .hapo-list-item {
+          font: bold 17px/21px UTM;
+        }
+      }
+    }
+  }
+
+  .hapo-wrap-contact {
+    padding-right: 0;
+
+    .hapo-face-link {
+      margin: 0 5px;
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 }
