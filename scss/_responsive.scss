@@ -191,6 +191,10 @@
     }
   }
 
+  .row-fix {
+    margin: 0;
+  }
+
   .hapo-wrap-slide {
     .wrap-det {
       top: 100%;
@@ -221,8 +225,6 @@
   }
 
   .row-one {
-    padding: 0 15px;
-
     .course-left,
     .course-center,
     .course-right {
