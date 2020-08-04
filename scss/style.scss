@@ -354,4 +354,59 @@
   }
 }
 
+.hapo-wrap-learn {
+  padding: 10% 0;
+  margin-top: 110px;
+  background: url(../image/background7.png) no-repeat center;
+  background-size: cover;
+
+  .hapo-content-learn {
+    .hapo-learn-heading {
+      font: normal bold 60px/74px UTM;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+    }
+  }
+}
+
+.hapo-content-learn {
+  .hapo-button-learn {
+    .hapo-learn-link {
+      margin: 15px auto auto auto;
+      background-color: #ffffff;
+      color: $button_color;
+      font: normal bold 30px/70px UTM;
+      letter-spacing: -0.05em;
+    }
+  }
+}
+
+.hapo-wrap-statistic {
+  .hapo-feedback-heading {
+    border-bottom: 5px solid $button_color;
+    @extend .heading-main;
+  }
+}
+
+.hapo-static-data {
+  display: flex;
+  justify-content: center;
+
+  .hapo-statistic-name {
+    color: #505353;
+  }
+
+  .hapo-statistic-name,
+  .hapo-statistic-data {
+    text-align: center;
+    font: normal bold 60px/74px main-font;
+    letter-spacing: -0.05em;
+  }
+
+  .hapo-statistic-data {
+    color: #b2d235;
+  }
+}
+
 @import "responsive";
