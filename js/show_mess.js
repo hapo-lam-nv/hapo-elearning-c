@@ -15,7 +15,7 @@ $(document).ready(function () {
       index = 0;
     }
     $(".hapo-wrap-slider").eq(index).css("visibility", "visible");
-    $(".hapo-wrap-slider").eq(index).css("animation-name", "slide_show");
+    $(".hapo-wrap-slider").eq(index).css("animation-name", "slideShow");
   }
 
   function flusSlider(n) {
@@ -25,21 +25,27 @@ $(document).ready(function () {
   $(".right_icon").click(function () {
     flusSlider(1);
   });
+
   $(".left_icon").click(function () {
     flusSlider(-1);
   });
 
   // automatic next slider
-  var index = 0;
-  function autoNext(index) {
+  function autoNext(x) {
     var len = $(".hapo-wrap-slider").length;
-    // for (var i = 0; i < len; i++) {
-    //   console.log($(".hapo-wrap-slider").get(i));
-    // }
-    console.log($($(".hapo-wrap-slider")[0]).css("display"));
+    for (var i = 0; i < len; i++) {
+      $($(".hapo-wrap-slider")[i]).css("visibility", "hidden");
+    }
+    indexReal = index % len;
+    $($(".hapo-wrap-slider")[indexReal]).css({
+      visibility: "visible",
+      "animation-name": "slideShow",
+    });
+    index++;
   }
 
-  setInterval(autoNext, 2000, index);
+  setInterval(autoNext, 3000, index);
+
   // show close message
   $(".hapo-wrap-icon").click(function () {
     $(".hapo-wrap-content-mes").toggle();
