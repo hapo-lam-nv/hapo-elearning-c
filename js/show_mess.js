@@ -42,7 +42,7 @@ $(document).ready(function () {
     console.log(index);
   }
 
-  setInterval(autoNext, 4000, index);
+  setInterval(autoNext, 3000, index);
 
   // show close message
   $(".hapo-wrap-icon").click(function () {
