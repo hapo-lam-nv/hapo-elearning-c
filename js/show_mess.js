@@ -4,6 +4,31 @@ $(document).ready(function () {
   // slider animation
   var index = 0;
 
+  // automatic next slider
+  function autoNext(x) {
+    index++;
+    var len = $(".hapo-wrap-slider").length;
+    $(".hapo-wrap-slider").css("visibility", "hidden");
+    $(".hapo-wrap-slider").css("animation-name", "");
+    index = index % len;
+    $($(".hapo-wrap-slider")[index]).css("visibility", "visible");
+    $($(".hapo-wrap-slider")[index]).css("animation-name", "slideShow");
+  }
+
+  // pause slider
+  var pause = () => {
+    clearInterval(myTimer);
+  };
+
+  // resume slider
+  var resume = () => {
+    clearInterval(myTimer);
+    myTimer = setInterval(autoNext, 3000, index);
+  };
+
+  $(".hapo-wrap-slider, .hapo-left-right").mouseenter(pause);
+  $(".hapo-wrap-slider, .hapo-left-right").mouseleave(resume);
+
   function show(n) {
     var slider_len = $(".hapo-wrap-slider").length;
     $(".hapo-wrap-slider").css("visibility", "hidden");
@@ -19,30 +44,23 @@ $(document).ready(function () {
   }
 
   function flusSlider(n) {
+    clearInterval(myTimer);
     show((index += n));
   }
 
+  var myTimer = setInterval(autoNext, 4000, index);
+
   $(".right_icon").click(function () {
+    clearInterval(myTimer);
     flusSlider(1);
+    myTimer = setInterval(autoNext, 4000, index);
   });
 
   $(".left_icon").click(function () {
+    clearInterval(myTimer);
     flusSlider(-1);
+    myTimer = setInterval(autoNext, 4000, index);
   });
-
-  // automatic next slider
-  function autoNext(x) {
-    index++;
-    var len = $(".hapo-wrap-slider").length;
-    $(".hapo-wrap-slider").css("visibility", "hidden");
-    $(".hapo-wrap-slider").css("animation-name", "");
-    index = index % len;
-    $($(".hapo-wrap-slider")[index]).css("visibility", "visible");
-    $($(".hapo-wrap-slider")[index]).css("animation-name", "slideShow");
-    console.log(index);
-  }
-
-  setInterval(autoNext, 3000, index);
 
   // show close message
   $(".hapo-wrap-icon").click(function () {
