@@ -93,9 +93,16 @@
     }
 
     .hapo-inf-left {
-      transform: scale(0.6, 0.6);
+      transform: scale(0.6);
       top: -250px;
       left: -84px;
+    }
+
+    .hapo-inf-right {
+      padding: 0;
+      transform: scale(1.2);
+      top: 0;
+      right: 22px;
     }
   }
 
@@ -255,6 +262,12 @@
       .hapo-content-heading {
         top: 15px;
         font: normal bold 40px/40px UTM;
+      }
+
+      .hapo-inf-right {
+        transform: scale(1);
+        top: 0;
+        right: 0;
       }
 
       .hapo-content {
