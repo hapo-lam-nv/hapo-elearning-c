@@ -32,19 +32,17 @@ $(document).ready(function () {
 
   // automatic next slider
   function autoNext(x) {
-    var len = $(".hapo-wrap-slider").length;
-    for (var i = 0; i < len; i++) {
-      $($(".hapo-wrap-slider")[i]).css("visibility", "hidden");
-    }
-    indexReal = index % len;
-    $($(".hapo-wrap-slider")[indexReal]).css({
-      visibility: "visible",
-      "animation-name": "slideShow",
-    });
     index++;
+    var len = $(".hapo-wrap-slider").length;
+    $(".hapo-wrap-slider").css("visibility", "hidden");
+    $(".hapo-wrap-slider").css("animation-name", "");
+    index = index % len;
+    $($(".hapo-wrap-slider")[index]).css("visibility", "visible");
+    $($(".hapo-wrap-slider")[index]).css("animation-name", "slideShow");
+    console.log(index);
   }
 
-  setInterval(autoNext, 3000, index);
+  setInterval(autoNext, 4000, index);
 
   // show close message
   $(".hapo-wrap-icon").click(function () {
