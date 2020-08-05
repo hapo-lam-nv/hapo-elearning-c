@@ -28,6 +28,18 @@ $(document).ready(function () {
   $(".left_icon").click(function () {
     flusSlider(-1);
   });
+
+  // automatic next slider
+  var index = 0;
+  function autoNext(index) {
+    var len = $(".hapo-wrap-slider").length;
+    // for (var i = 0; i < len; i++) {
+    //   console.log($(".hapo-wrap-slider").get(i));
+    // }
+    console.log($($(".hapo-wrap-slider")[0]).css("display"));
+  }
+
+  setInterval(autoNext, 2000, index);
   // show close message
   $(".hapo-wrap-icon").click(function () {
     $(".hapo-wrap-content-mes").toggle();
@@ -51,4 +63,7 @@ $(document).ready(function () {
       $(".hapo-feedback-det").addClass("container");
     }
   });
+
+  // show tooltip
+  $('[data-toggle="tooltip"]').tooltip();
 });
