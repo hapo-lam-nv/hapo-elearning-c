@@ -186,7 +186,12 @@
 }
 
 @media only screen and (max-width: 425px) {
-  .container {
+  .container-fluid {
+    .fix-icon {
+      width: 30px;
+      height: 30px;
+    }
+
     .navbar-nav {
       .nav-item {
         color: #505353;

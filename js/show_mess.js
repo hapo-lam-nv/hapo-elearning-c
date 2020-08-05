@@ -36,4 +36,19 @@ $(document).ready(function () {
   $(".hapo-close").click(function () {
     $(".hapo-wrap-content-mes").hide();
   });
+
+  // show icon close
+  $(".navbar-toggler").click(function () {
+    $(".navbar-toggler span").toggleClass("fa fa-times");
+    $(".navbar-toggler span").toggleClass("navbar-toggler-icon");
+  });
+
+  // remove line-wrap
+  $(window).resize(function () {
+    var width = $(window).width();
+    if (width <= 425) {
+      $(".line-wrap").remove();
+      $(".hapo-feedback-det").addClass("container");
+    }
+  });
 });
