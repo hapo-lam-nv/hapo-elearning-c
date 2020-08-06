@@ -33,6 +33,24 @@ $button_color: #b2d235;
   }
 }
 
+@keyframes slideShowFixHidden {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes slideShowFix {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
 .fix-hover {
   text-decoration: none;
   background-color: $button_color;
