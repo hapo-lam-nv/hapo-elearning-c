@@ -152,6 +152,7 @@ ul {
   border-radius: 22px;
   letter-spacing: 0.06rem;
   background-color: #b2d235;
+  font-family: UTM;
   -webkit-text-stroke-width: 1px; }
   .container .card .btn-cus:hover {
     opacity: 0.8; }
@@ -205,13 +206,16 @@ ul {
     font: normal bold 70px/86px UTM;
     margin-bottom: 20px;
     position: relative;
-    top: 150px; }
+    top: 180px; }
   .hapo-wrap-inf .container {
-    padding: 180px 0; }
-  .hapo-wrap-inf li {
-    margin: 10px 0 10px 30px;
-    color: white;
-    font: 20px/25px UTM; }
+    padding: 90px 0; }
+  .hapo-wrap-inf ul {
+    position: relative;
+    top: 30px; }
+    .hapo-wrap-inf ul li {
+      margin: 10px 0 10px 30px;
+      color: white;
+      font: 20px/25px UTM; }
 
 .hapo-wrap-feedback {
   padding-top: 104px; }
@@ -345,7 +349,6 @@ ul {
   .hapo-wrap-learn .hapo-content-learn .hapo-learn-heading {
     font: normal bold 60px/74px UTM;
     text-align: center;
-    letter-spacing: -0.02em;
     color: #ffffff; }
 
 .hapo-content-learn .hapo-button-learn .hapo-learn-link {
@@ -353,7 +356,8 @@ ul {
   background-color: #ffffff;
   color: #b2d235;
   font: normal bold 30px/70px UTM;
-  letter-spacing: -0.05em; }
+  letter-spacing: -0.05em;
+  -webkit-text-stroke-width: 0; }
 
 .hapo-wrap-statistic .hapo-feedback-heading {
   border-bottom: 5px solid #b2d235; }
@@ -509,6 +513,9 @@ ul {
       display: block;
       text-align: center;
       font: normal bold 50px/61px UTM; }
+    .hapo-wrap-inf .hapo-inf-content ul {
+      position: relative;
+      top: 0; }
     .hapo-wrap-inf .hapo-inf-content li {
       font: 14px/20px UTM; }
   .hapo-wrap-inf .hapo-inf-left {
@@ -601,22 +608,25 @@ ul {
   .hapo-row-four .hapo-all-course {
     font: bold 22px/27px UTM; }
 
-  .hapo-wrap-inf .hapo-inf-content .hapo-content-heading {
-    top: 15px;
-    font: normal bold 40px/40px UTM; }
-  .hapo-wrap-inf .hapo-inf-content .hapo-inf-right {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    top: 0;
-    right: 0; }
-  .hapo-wrap-inf .hapo-inf-content .hapo-content {
-    margin-top: 20px; }
+  .hapo-wrap-inf .hapo-inf-content {
+    padding: 50px 0; }
+    .hapo-wrap-inf .hapo-inf-content .hapo-content-heading {
+      top: 15px;
+      font: normal bold 40px/40px UTM; }
+    .hapo-wrap-inf .hapo-inf-content .hapo-inf-right {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      top: 0;
+      right: 0; }
+    .hapo-wrap-inf .hapo-inf-content .hapo-content {
+      margin-top: 20px; }
 
   .hapo-wrap-feedback .hapo-wrap-feedback-heading .hapo-feedback-heading {
     font: bold 40px/49px UTM; }
 
   .hapo-wrap-learn .hapo-content-learn .hapo-learn-heading {
-    font: normal bold 23px/28px UTM; }
+    font: 23px/28px UTM;
+    letter-spacing: 0.03rem; }
 
   .hapo-content-learn .hapo-button-learn .hapo-learn-link {
     font: normal bold 18px/22px UTM; }

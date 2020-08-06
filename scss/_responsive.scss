@@ -87,6 +87,11 @@
         font: normal bold 50px/61px UTM;
       }
 
+      ul {
+        position: relative;
+        top: 0;
+      }
+
       li {
         font: 14px/20px UTM;
       }
@@ -264,6 +269,8 @@
 
   .hapo-wrap-inf {
     .hapo-inf-content {
+      padding: 50px 0;
+
       .hapo-content-heading {
         top: 15px;
         font: normal bold 40px/40px UTM;
@@ -292,7 +299,8 @@
   .hapo-wrap-learn {
     .hapo-content-learn {
       .hapo-learn-heading {
-        font: normal bold 23px/28px UTM;
+        font: 23px/28px UTM;
+        letter-spacing: 0.03rem;
       }
     }
   }
