@@ -376,3 +376,49 @@
     }
   }
 }
+
+@media only screen and (max-width: 375px) {
+  .hapo-wrap-inf {
+    .hapo-inf-content {
+      ul {
+        padding: 0;
+      }
+    }
+  }
+
+  .hapo-wrap-feedback-users {
+    .hapo-feedback-user {
+      .hapo-feedback-user-content {
+        -webkit-line-clamp: 5;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+
+  .container {
+    .card {
+      .card-text {
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+
+  .row-fix {
+    margin-top: 30px;
+  }
+
+  .row-one {
+    .course-left,
+    .course-center,
+    .course-right {
+      padding: 0 40px 30px 40px;
+    }
+  }
+}
